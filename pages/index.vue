@@ -1,5 +1,10 @@
 <template>
-  <Navbar />
+  <div>
+    <Navbar />
+    <Hero />
+    <WhoWeAre />
+    <WhyUs />
+  </div>
 </template>
 
 <script>
