@@ -39,11 +39,31 @@
             adipisicing elit. A sed laudantium dolorum?
           </p>
         </div>
-        <div class="slider-conatiner">
+        <!-- <div class="slider-conatiner">
           <div class="slider-wrapper">
-            <div class="slider-card" style="width: 620px"></div>
+            <div
+              class="w-full p-4 mx-auto bg-gray-100 drop-shadow-2xl rounded-xl md:p-8 lg:p-10 slider-card md:w-4/6 lg:w-1/2"
+            >
+              <p class="text-center">
+                Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quae consectetur nulla minima, dolorem nisi
+                maiores? Iusto veniam nostrum ab consequatur?.
+              </p>
+              <div
+                class="flex flex-col items-center justify-center w-full mx-auto"
+              >
+                <img
+                  src="https://truewave.io/images/testimonial/oliver-bates.jpg"
+                  class="w-24 h-24 mx-auto rounded-full"
+                />
+                <small class="block">Lorem, ipsum.</small>
+                <small class="block font-semibold">CEO - Betgames</small>
+              </div>
+            </div>
           </div>
-        </div>
+        </div> -->
+
+        <Slider />
       </div>
     </section>
   </div>
