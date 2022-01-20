@@ -8,7 +8,7 @@
       >
         <div class="flex justify-center space-x-3 md:order-2">
           <a
-            href="https://twitter.com/nuxt_js"
+            href="https://twitter.com/betawave_io"
             target="_blank"
             rel="noopener"
             class="footer-link"
@@ -16,7 +16,7 @@
             <svg-icon class="w-6 h-6 fill-current" name="twitter"></svg-icon>
           </a>
           <a
-            href="https://github.com/nuxt/framework"
+            href="https://github.com/nuxt/betawave_io"
             target="_blank"
             rel="noopener"
             class="footer-link"
