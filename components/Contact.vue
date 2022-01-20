@@ -37,7 +37,7 @@
             ></svg-icon>
           </div>
           <div class="flex-1">
-            <p class="text-xs md:text-lg">+27 (91) 11563424</p>
+            <p class="text-xs lg:text-lg">+27 (91) 11563424</p>
           </div>
         </div>
         <div class="flex items-center justify-between flex-1 email">
@@ -63,7 +63,7 @@
             class="absolute w-4 h-4 fill-current top-1/2 left-1/2 center-items"
           ></svg-icon>
         </div>
-        <div class="flex-1 md:text-lg">
+        <div class="flex-1 lg:text-lg">
           <p>Lorem, ipsum dolor.</p>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit.</p>
