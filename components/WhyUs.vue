@@ -1,16 +1,16 @@
 <template>
-  <div class="relative dark:bg-secondary-darkest bg-gray-50">
-    <section
-      class="py-24 text-black dark:text-white md:py-40 light:text-secondary-black"
-    >
+  <div class="relative">
+    <img
+      src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1643202809/Betawave_io/section-semicirlce_j3mfty.svg"
+      class="s-edge edge-b2b-bottom"
+    />
+    <section class="py-16 text-gray md:py-20 bg-tertiary">
       <div
         class="relative flex flex-col items-center w-full d-container-content"
       >
         <div class="flex flex-col items-center w-full col-span-12">
           <div class="mb-2">
-            <span
-              class="text-lg font-bold capitalize text-cloud-dark dark:text-cloud-light"
-            >
+            <span class="text-lg font-bold capitalize">
               Business Done Right
             </span>
           </div>
@@ -20,7 +20,7 @@
             Why Betawave
           </h1>
           <p
-            class="mb-12 font-normal text-center text-body-base md:text-body-lg 2xl:text-body-xl"
+            class="mb-12 font-normal text-center md:text-body-lg 2xl:text-body-xl"
           ></p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div
@@ -28,19 +28,22 @@
               :key="item.id"
               class="flex flex-col items-center p-6 transition duration-200 rounded-md"
             >
-              <svg-icon
-                :name="item.icon"
-                class="w-10 h-10 mb-4 transition duration-200 iconify iconify--entypo text-primary group-hover:text-primary-400"
-              ></svg-icon>
+              <div class="icon-bg">
+                <img
+                  :src="item.svg"
+                  :alt="item.id"
+                  class="flex items-center justify-center"
+                />
+              </div>
 
               <h3
-                class="relative inline-flex items-center mb-1 font-bold text-center text-body-lg lg:text-body-xl"
+                class="relative inline-flex items-center font-bold text-center text-body-lg lg:text-body-xl"
               >
                 {{ item.title }}
               </h3>
-              <p class="mb-4 text-sm text-center lg:text-base">
+              <span class="mb-4 text-sm text-center lg:text-base">
                 {{ item.description }}
-              </p>
+              </span>
             </div>
           </div>
         </div>
@@ -57,44 +60,50 @@ export default {
         {
           id: 1,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Be the sportsbook boss",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "Attract players from all around the world, have the most sports, events, and unique bet kinds. Let them bet on almost anything.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/win-svg_ze46gf.svg",
         },
         {
           id: 2,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Give your players the MAX",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "Offer an enormous assortment, with access to the most diverse selection of casino and slot games, as well as our incredible Ugames.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/disk-svg_kjqgid.svg",
         },
         {
           id: 3,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Forget the hassle",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "Create a stronger betting business with quality, hassle-free solutions and everything your business needs to prosper.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/smile_hpbt8x.svg",
         },
         {
           id: 4,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Localize Efficiently",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "Expand your business with our multi-lingual and multi-currency platform solution, and localized content for every region.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/thumbs-up_m5iumh.svg",
         },
         {
           id: 5,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Get more then just a platform",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "We’re interested in your success, therefore our industry-experienced team is ready to ensure your goals are achieved.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/notification_rscw2l.svg",
         },
         {
           id: 6,
           icon: "sun",
-          title: "Ulrrimate Sportbook",
+          title: "Grow faster",
           description:
-            "Attract all playing preferences with the most extensive coverage of sports, events , and markets. Let them bet on almost anything.",
+            "Achieve over 35% conversion. Benefit from our exceptional additional services and versatility to show even better results.",
+          svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/growth_sahceg.svg",
         },
       ],
     };
@@ -102,4 +111,32 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.s-edge.edge-b2b-bottom {
+  display: block;
+  height: 40px;
+  margin-top: -98px;
+  margin-bottom: -2px;
+}
+
+@media only screen and (min-width: 768) {
+  .s-edge.edge-b2b-bottom {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .s-edge.edge-b2b-bottom {
+    height: 70px;
+  }
+}
+
+.icon-bg {
+  width: 60px;
+  height: 60px;
+  background: #889cca;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+}
+</style>

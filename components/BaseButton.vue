@@ -239,10 +239,10 @@ export default {
                 default:
                   break;
               }
-              return "text-black bg-gray-300 hover:bg-gray-200";
+              return "text-gray bg-gray-300 hover:bg-gray-200";
               break;
             case "outline":
-              return "border border-gray-300 text-gray-300 bg-transparent  hover:text-black hover:bg-gray-300";
+              return "border border-gray-300 text-gray-300 bg-transparent  hover:text-gray hover:bg-gray-300";
               break;
             default:
               break;
@@ -261,7 +261,7 @@ export default {
               return "text-white bg-black hover:bg-gray-700";
               break;
             case "outline":
-              return "border border-black text-black bg-transparent  hover:text-white hover:bg-black";
+              return "border border-black text-gray bg-transparent  hover:text-white hover:bg-black";
               break;
             default:
               break;

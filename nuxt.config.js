@@ -33,10 +33,30 @@ export default {
     // "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/fontawesome",
+    "@nuxtjs/google-fonts",
   ],
 
+  fontawesome: {
+    component: "fa",
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
+  googleFonts: {
+    families: {
+      Quicksand: true,
+      // Quicksand: {
+      //   wght: [100, 600],
+      //   ital: [100],
+      // },
+      // "Josefin+Sans": true,
+      // Lato: [100, 300],
+    },
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/svg-sprite"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

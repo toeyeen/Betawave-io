@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="footer">
     <footer
       class="text-center border-t bg-cloud-surface dark:bg-sky-black dark:border-t-sky-darkest"
     >
@@ -13,15 +13,17 @@
             rel="noopener"
             class="footer-link"
             ><span class="sr-only">Twitter</span>
-            <svg-icon class="w-6 h-6 fill-current" name="twitter"></svg-icon>
+            <!-- <svg-icon class="w-6 h-6 fill-current" name="twitter"></svg-icon> -->
+            <fa :icon="['fab', 'twitter']" class="w-6 h-6 fill-current" />
           </a>
           <a
-            href="https://github.com/nuxt/betawave_io"
+            href="https://github.com/betawave_io/website"
             target="_blank"
             rel="noopener"
             class="footer-link"
             ><span class="sr-only">GitHub</span>
-            <svg-icon class="w-6 h-6 fill-current" name="github"></svg-icon>
+            <!-- <svg-icon class="w-6 h-6 fill-current" name="github"></svg-icon> -->
+            <fa :icon="['fab', 'github']" class="w-6 h-6 fill-current" />
           </a>
         </div>
         <div class="mt-3 md:mt-0 md:order-1">
