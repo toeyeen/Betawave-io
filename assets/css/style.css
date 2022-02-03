@@ -1,3 +1,7 @@
+* {
+  font-family: "DM Sans" sans-serif;
+}
+
 @media (min-width: 414px) {
   .xs\:text-display-4 {
     font-size: 3rem;
@@ -97,5 +101,47 @@
   .d-container-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+
+@keyframes slide-in-first {
+  0% {
+    transform: translateY(-15%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes btnAnimation {
+  0% {
+    transform: rotate(0) translateX(-30px);
+    opacity: 0;
+  }
+  76% {
+    transform: rotate(0) translateX(10px);
+    opacity: 0.76;
+  }
+  100% {
+    transform: rotate(0) translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes imgSlide {
+  0% {
+    transform: rotate(0) translateX(-10%);
+    opacity: 0;
+  }
+  76% {
+    transform: rotate(0) translateX(10%);
+    opacity: 0.76;
+  }
+  100% {
+    transform: rotate(0) translateX(0px);
+    opacity: 1;
   }
 }

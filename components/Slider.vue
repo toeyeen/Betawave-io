@@ -13,7 +13,7 @@
         :breakpoints="breakpoints"
       >
         <vue-glide-slide
-          class="w-full p-4 mx-auto bg-gray-100 slider drop-shadow-2xl rounded-xl md:p-8 lg:p-12 slider-card md:w-4/6 lg:w-1/2"
+          class="w-full p-4 mx-auto bg-gray-100 slider drop-shadow-2xl rounded-xl md:px-4 lg:px-4 md:py-2 lg:py-2 slider-card md:w-4/6 lg:w-1/2"
           v-for="currentItem in items"
           :key="currentItem.id"
         >
@@ -55,35 +55,21 @@ export default {
       items: [
         {
           id: 1,
-          image: "https://truewave.io/images/testimonial/oliver-bates.jpg",
-          name: "Lorem, ipsum.",
-          role: "CEO - Betgames",
+          image:
+            "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643462955/Betawave_io/avatar_xrhrwn.svg",
+          name: "Adeleke Sofola",
+          role: "CEO - Shopaholic Pools",
           comment:
-            "“I have worked with Truewave and Imran for manyyears on several projects. Imran and his team are attentive,professional, flexible and always deliver.",
+            "These company takes every peice of information and excute it to an overly satisfastory level, their attention to details and professionalism is impeccable. I will continue to work with them.",
         },
         {
           id: 2,
-          image: "https://truewave.io/images/testimonial/john-gordon.jpg",
-          name: "James, ipsum.",
-          role: "CEO - Nairabet",
+          image:
+            "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643462955/Betawave_io/avatar_xrhrwn.svg",
+          name: "Imran Bukhari",
+          role: "CEO - Truewave",
           comment:
-            "Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur nulla minima, dolorem nisi maiores? Iusto veniam nostrum ab consequatur",
-        },
-        {
-          id: 3,
-          image: "https://truewave.io/images/testimonial/sam-lawrence.jpg",
-          name: "Ibori, ipsum.",
-          role: "CEO - Inbet",
-          comment:
-            "They have helped us to deliver good sports betting websites, tailored to the specific needs of our African partners. Their solution has proven to be scalable and robust in an industry with significant technical challenges to meet.”",
-        },
-        {
-          id: 4,
-          image: "https://truewave.io/images/testimonial/oliver-bates.jpg",
-          name: "Toyin, ipsum.",
-          role: "CEO - Betgames",
-          comment:
-            "Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur nulla minima, dolorem nisi maiores? Iusto veniam nostrum ab consequatur",
+            "I have worked with Betawave for many years on several projects. This team are attentive,professional, flexible and they always deliver",
         },
       ],
       perView: 1,

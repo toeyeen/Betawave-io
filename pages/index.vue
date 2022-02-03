@@ -2,10 +2,10 @@
   <div>
     <Navbar />
     <Hero />
-    <who-we-are title="About Us">
+    <who-we-are title="About Us" tagId="aboutus">
       <template v-slot:paragraph>
         <p>
-          Uplatform is a dynamic sports betting and casino operating platform
+          Betawave is a dynamic sports betting and casino operating platform
           comprising a highly skilled team whose primary concern is your
           success.
         </p>
@@ -36,7 +36,7 @@
     </who-we-are>
     <Products />
     <WhyUs />
-    <who-we-are title="Our Team">
+    <who-we-are title="Our Team" id="team">
       <template v-slot:paragraph>
         <p>
           Our team is spread over two offices, in Johannesburg, and Lagos -

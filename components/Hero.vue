@@ -1,6 +1,8 @@
 <template>
-  <div
-    class="flex-auto w-full min-w-0 text-white lg:static hero-height lg:overflow-visible bg-primary"
+  <section
+    id="home"
+    ref="section"
+    class="flex-auto w-full min-w-0 text-white lg:static hero-height lg:overflow-visible bg-primary font-primary"
   >
     <div
       class="relative pt-12 overflow-hidden dark:bg-sky-black dark:text-white lg:h-screen"
@@ -8,7 +10,7 @@
       <div
         class="flex flex-wrap justify-center py-0 section d-container-content"
       >
-        <section
+        <div
           class="z-20 flex flex-col justify-start w-full px-4 pb-24 text-center"
         >
           <div class="text-left hero-text">
@@ -16,52 +18,20 @@
               The Hybrid Betting <br />
               Platform
             </h1>
-            <h3 class="slide-in-second">
+            <h3 class="slide-in-first">
               Turn your ideas into profits! Start a new business or expand an
               existing one – Betawave is your assured partner on the road to
               achieving your goals.
             </h3>
-            <div class="mt-8">
+            <div class="mt-8 btnAnimation">
               <nuxt-link
-                to="http://google.com"
+                to="/#contact"
                 class="font-medium text-gray-700 bg-secondary btn medium"
                 >Get started
               </nuxt-link>
             </div>
-
-            <!-- <div
-              class="flex flex-col flex-wrap items-center justify-start space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3 xl:space-x-4"
-            >
-              <p>Our platform</p>
-              <nuxt-link
-                to="http://google.com"
-                class="font-medium text-white bg-red-500 btn medium"
-                >Get started
-              </nuxt-link>
-            </div> -->
           </div>
-          <!-- <h1
-            class="pt-2 mb-6 font-serif font-normal text-display-5 md:text-display-3 2xl:text-display-2 md:text-2xl"
-          ></h1>
-          <h2
-            class="px-8 mb-8 font-normal text-body-base xs:text-body-lg md:text-body-xl 2xl:text-body-2xl sm:px-0 dark:text-cloud-lighter text-cloud-darker"
-          >
-            Turn your ideas into profits! Start a new business or expand an
-            existing one – Betawave is your assured partner on the road to
-            achieving your goals.
-          </h2> -->
-
-          <!-- <div
-            class="flex flex-col flex-wrap items-center justify-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-3 xl:space-x-4"
-          >
-            <p>Our platform</p>
-            <nuxt-link
-              to="http://google.com"
-              class="font-medium text-white bg-red-500 btn medium"
-              >Get started
-            </nuxt-link>
-          </div> -->
-        </section>
+        </div>
 
         <div class="backdrop">
           <div class="right-side">
@@ -85,7 +55,7 @@
       alt=""
       class="s-edge edge-b2b-bottom"
     />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -129,7 +99,7 @@ export default {};
 }
 
 .s-edge.edge-b2b-bottom {
-  display: block;
+  // display: block;
   height: 55px;
   margin-bottom: -2px;
 }
@@ -218,7 +188,7 @@ export default {};
 
   .right-side {
     position: absolute;
-    top: 0px;
+    top: -10px;
     right: -90px;
     width: 714px;
     display: block;
@@ -246,42 +216,10 @@ img {
 }
 
 .slide-in-first {
-  animation: slide-in-first 2s ease-in;
+  animation: slide-in-first 1s forwards 0s ease;
 }
 
-@keyframes slide-in-first {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-    transition: all 0.1s ease;
-  }
-}
-
-// @keyframes slide-in-first {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(20%);
-//   }
-
-//   20% {
-//     // opacity: 0.5;
-//     transform: translateY(10%);
-//   }
-
-//   100% {
-//     // opacity: 1;
-//     transform: translateY(0%);
-//   }
-// }
-.slide-in-second {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
+.btnAnimation {
+  animation: btnAnimation 1.2s forwards 0s ease;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white bg-primary">
+  <section ref="section" class="text-white bg-primary" id="contact">
     <img
       src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1643213594/Betawave_io/output-onlinepngtools_grtlje.png"
       class="s-edge edge-footer-top"
@@ -37,7 +37,7 @@
         <div class="flex items-center justify-between mt-8">
           <div class="flex items-center justify-between flex-1 phone">
             <div
-              class="relative w-10 h-10 mr-4 border border-gray-700 rounded-full"
+              class="relative w-10 h-10 mr-4 border border-gray-300 rounded-full"
             >
               <!-- <svg-icon
               name="sun"
@@ -54,7 +54,7 @@
           </div>
           <div class="flex items-center justify-between flex-1 email">
             <div
-              class="relative w-10 h-10 mr-4 border border-gray-700 rounded-full"
+              class="relative w-10 h-10 mr-4 border border-gray-300 rounded-full"
             >
               <!-- <svg-icon
               name="moon"
@@ -72,7 +72,7 @@
         </div>
         <div class="flex items-center justify-between my-8">
           <div
-            class="relative w-10 h-10 mr-4 border border-gray-700 rounded-full"
+            class="relative w-10 h-10 mr-4 border border-gray-300 rounded-full"
           >
             <!-- <svg-icon
             name="sun"
@@ -91,7 +91,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

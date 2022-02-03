@@ -101,10 +101,10 @@ export default {
                 default:
                   break;
               }
-              return `text-white bg-blue-600 hover:bg-blue-500`;
+              return `text-white bg-blue-600 `;
               break;
             case "outline":
-              return `border border-blue-600 text-blue-600 bg-transparent  hover:bg-blue-600 outline`;
+              return `border border-blue-600 text-blue-600 bg-transparent   outline`;
               break;
             default:
               break;
@@ -120,10 +120,10 @@ export default {
                 default:
                   break;
               }
-              return "text-white bg-red-600 hover:bg-red-500";
+              return "text-white bg-red-600 ";
               break;
             case "outline":
-              return "border border-red-600 text-red-600 bg-transparent  hover:text-white hover:bg-red-600";
+              return "border border-red-600 text-red-600 bg-transparent  ";
               break;
             default:
               break;
@@ -139,10 +139,10 @@ export default {
                 default:
                   break;
               }
-              return "text-white bg-yellow-600 hover:bg-yellow-500";
+              return "text-white bg-yellow-600 ";
               break;
             case "outline":
-              return "border border-yellow-600 text-primary-warning bg-transparent  hover:text-white hover:bg-yellow-600";
+              return "border border-yellow-600 text-primary-warning bg-transparent  ";
               break;
             default:
               break;

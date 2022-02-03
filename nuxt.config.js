@@ -1,6 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  ssr: false, // Disable Server Side rendering
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -14,7 +15,13 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -26,7 +33,17 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop,
+          behavior: "smooth",
+        });
+      }
+      return window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+  },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
@@ -46,13 +63,7 @@ export default {
   },
   googleFonts: {
     families: {
-      Quicksand: true,
-      // Quicksand: {
-      //   wght: [100, 600],
-      //   ital: [100],
-      // },
-      // "Josefin+Sans": true,
-      // Lato: [100, 300],
+      "DM Sans": true,
     },
   },
 

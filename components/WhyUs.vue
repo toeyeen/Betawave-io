@@ -1,10 +1,10 @@
 <template>
-  <div class="relative">
+  <section class="relative mt-20" id="services" ref="section">
     <img
       src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1643202809/Betawave_io/section-semicirlce_j3mfty.svg"
       class="s-edge edge-b2b-bottom"
     />
-    <section class="py-16 text-gray md:py-20 bg-tertiary">
+    <div class="py-16 text-gray md:py-20 bg-tertiary">
       <div
         class="relative flex flex-col items-center w-full d-container-content"
       >
@@ -15,7 +15,7 @@
             </span>
           </div>
           <h1
-            class="mb-2 font-serif font-normal text-center text-display-6 md:text-display-5 2xl:text-display-4"
+            class="mb-2 font-semibold text-center text-display-6 md:text-display-5 2xl:text-display-4"
           >
             Why Betawave
           </h1>
@@ -48,8 +48,8 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -115,8 +115,8 @@ export default {
 .s-edge.edge-b2b-bottom {
   display: block;
   height: 40px;
-  margin-top: -98px;
-  margin-bottom: -2px;
+  margin-top: -150px;
+  margin-bottom: -1px;
 }
 
 @media only screen and (min-width: 768) {

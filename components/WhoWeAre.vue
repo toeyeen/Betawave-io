@@ -1,10 +1,10 @@
 <template>
-  <div id="whoweare">
-    <section class="py-20 text-lg">
+  <section :id="tagId" ref="section">
+    <div class="py-20 text-lg">
       <div class="relative w-full text-justify d-container-content">
         <div class="mb-8 text">
           <h1
-            class="my-4 font-serif font-normal text-center text-display-5 xs:text-display-4 md:text-display-3 2xl:text-display-2"
+            class="my-4 font-semibold text-center text-display-5 xs:text-display-4 md:text-display-3 2xl:text-display-2"
           >
             {{ title }}
           </h1>
@@ -13,15 +13,15 @@
           </div>
         </div>
 
-        <div class="mx-auto my-container">
+        <div class="mx-auto slider-container">
           <slot name="slider"> </slot>
         </div>
       </div>
-    </section>
+    </div>
     <div class="relative z-10 section-divider">
       <slot name="image"></slot>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -30,6 +30,9 @@ export default {
     title: {
       type: String,
       default: "Title",
+    },
+    tagId: {
+      type: String,
     },
   },
 };
@@ -46,14 +49,25 @@ p {
   transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
 }
 
+.slider-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 375px) {
   .edge-stdbill-bottom {
-    margin-bottom: -65px;
+    margin-bottom: -64px;
   }
 }
 @media only screen and (min-width: 425px) {
   .edge-stdbill-bottom {
-    margin-bottom: -72px;
+    margin-bottom: -70px;
   }
 }
 @media only screen and (min-width: 768px) {

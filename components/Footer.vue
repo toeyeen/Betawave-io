@@ -4,7 +4,7 @@
       class="text-center border-t bg-cloud-surface dark:bg-sky-black dark:border-t-sky-darkest"
     >
       <div
-        class="px-4 py-8 mx-auto d-container sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+        class="p-4 mx-auto d-container sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
       >
         <div class="flex justify-center space-x-3 md:order-2">
           <a

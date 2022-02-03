@@ -1,19 +1,20 @@
 <template>
-  <div class="relative text-white bg-primary">
-    <div
-      id="services"
-      class="relative w-full pt-16 pb-32 text-justify d-container-content"
-    >
+  <section ref="section" class="relative text-white bg-primary" id="whoweare">
+    <div class="relative w-full pt-16 pb-32 text-justify d-container-content">
       <div
-        class="flex flex-col-reverse mt-16 md:mt-24 xl:mt-40 lg:mt-32 md:flex-row"
+        class="flex flex-col-reverse mt-16 md:mt-24 md:mb-32 xl:mt-40 lg:mt-32 md:flex-row"
       >
         <div class="z-10 hidden pb-8 md:block md:w-2/5 product-image">
           <img
+            v-infocus="'showElement'"
+            class="my-hidden hidden-left md:-mt-6 xl:-mt-14"
             src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1643408122/Betawave_io/Screen_Shot_2022-01-28_at_11.11.46_PM_imac2015retina_front_jzxcof.png"
-            class="-mt-14"
           />
         </div>
-        <div class="flex-1 pb-4 md:pl-8 product-interaction">
+        <div
+          v-infocus="'showElement'"
+          class="flex-1 pb-4 md:pl-8 product-interaction my-hidden hidden-right"
+        >
           <h2 class="mb-12 text-3xl md:text-5xl">
             Betting and Casino <br />
             products
@@ -62,11 +63,35 @@
     <div class="wave">
       <div class="wave-svg"></div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {};
+// import handleEnter from "../directives/handle-enter";
+export default {
+  directives: {
+    infocus: {
+      isLiteral: true,
+      inserted: (el, binding) => {
+        let f = () => {
+          let rect = el.getBoundingClientRect();
+          let inView =
+            rect.width > 0 &&
+            rect.height > 0 &&
+            rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight);
+          if (inView) {
+            el.classList.add(binding.value);
+            window.removeEventListener("scroll", f);
+          }
+        };
+        window.addEventListener("scroll", f);
+        f();
+      },
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -85,20 +110,31 @@ export default {};
   width: 50px;
 }
 
-.wave-svg {
+.wave {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   z-index: 200;
   overflow: hidden;
   width: 100%;
   height: 150px;
+}
+
+.wave-svg {
+  position: absolute;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  width: 300vw;
+  height: 70px;
   background-image: url("https://res.cloudinary.com/dvuogdjyq/image/upload/v1643205792/Betawave_io/wave-2-outlines_xqwilj.svg");
   background-position: 0% 100%;
   background-size: 150vw 100%;
   background-repeat: repeat-x;
-  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-  width: 300vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .wave-svg {
+    height: 140px;
+  }
 }
 
 @keyframes wave {
@@ -130,5 +166,27 @@ export default {};
     top: 50px;
     width: 100px;
   }
+}
+
+.imgSlide {
+  animation: imgSlide 2s forwards 0s ease-in;
+}
+
+.my-hidden {
+  opacity: 0;
+}
+
+.hidden-right {
+  transform: translate(50px, 0);
+}
+
+.hidden-left {
+  transform: translate(-50px, 0);
+}
+
+.showElement {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.5s ease-out;
 }
 </style>
