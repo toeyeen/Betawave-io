@@ -37,7 +37,7 @@
               </div>
 
               <h3
-                class="relative inline-flex items-center font-bold text-center text-body-lg lg:text-body-xl"
+                class="relative inline-flex items-center mt-4 font-bold text-center text-body-lg lg:text-body-xl"
               >
                 {{ item.title }}
               </h3>

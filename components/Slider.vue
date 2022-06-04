@@ -60,7 +60,7 @@ export default {
           name: "Adeleke Sofola",
           role: "CEO - Shopaholic Pools",
           comment:
-            "These company takes every peice of information and excute it to an overly satisfastory level, their attention to details and professionalism is impeccable. I will continue to work with them.",
+            "This company takes every peice of information and excute it to an overly satisfastory level, their attention to details and professionalism is impeccable. I will continue to work with them.",
         },
         {
           id: 2,
@@ -97,13 +97,12 @@ export default {
     startSlider() {
       this.timer = setInterval(this.next, 4000);
     },
-    test(index) {
-      alert(`click ${index}`);
-    },
-    testMount() {
-      alert("mounted");
-      // this.$refs.slider.glide.disable();
-    },
+    // test(index) {
+    //   alert(`click ${index}`);
+    // },
+    // testMount() {
+    //   alert("mounted");
+    // },
   },
   mounted() {
     this.startSlider();

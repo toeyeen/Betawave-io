@@ -15,12 +15,12 @@
           engage customers, boost efficiency and drive revenue growth.
         </p>
         <div class="mt-8 form">
-          <form>
+          <form @submit.prevent="submit">
             <BaseInput label="Name" class="mb-4" />
             <BaseInput label="Email" class="mb-4" />
             <BaseInput label="Subject" class="mb-4" />
             <BaseInput label="Message" class="mb-4" />
-            <base-button class="mt-8 bg-secondary text-dark">
+            <base-button size="normal" class="mt-8 bg-secondary text-dark">
               Submit</base-button
             >
           </form>
@@ -74,10 +74,6 @@
           <div
             class="relative w-10 h-10 mr-4 border border-gray-300 rounded-full"
           >
-            <!-- <svg-icon
-            name="sun"
-            class="absolute w-4 h-4 fill-current top-1/2 left-1/2 center-items"
-          ></svg-icon> -->
             <fa
               icon="map-marker-alt"
               class="absolute w-4 h-4 fill-current top-1/2 center-items t left-1/2"
@@ -98,6 +94,12 @@
 import BaseButton from "./BaseButton.vue";
 export default {
   components: { BaseButton },
+
+  methods: {
+    submit(e) {
+      // console.log(123);
+    },
+  },
 };
 </script>
 

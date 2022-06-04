@@ -18,11 +18,11 @@
               The Hybrid Betting <br />
               Platform
             </h1>
-            <h3 class="slide-in-first">
+            <p class="text-2xl font-light leading-tight slide-in-first">
               Turn your ideas into profits! Start a new business or expand an
               existing one – Betawave is your assured partner on the road to
               achieving your goals.
-            </h3>
+            </p>
             <div class="mt-8 btnAnimation">
               <nuxt-link
                 to="/#contact"
@@ -70,6 +70,9 @@ export default {};
   padding: 0.625rem 1rem;
   line-height: 1rem;
   border-radius: 6px;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .left-side {
@@ -111,6 +114,7 @@ export default {};
 }
 
 .hero-text {
+  font-family: "lato", sans-serif;
   margin-top: 100px;
   margin-bottom: 30px;
 }
