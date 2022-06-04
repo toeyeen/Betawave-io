@@ -11,9 +11,11 @@
         <fa icon="bars" class="w-8 h-8 text-white fill-current fa-2x" />
       </button>
       <div
-        class="flex items-center justify-center flex-1 text-2xl text-white logo lg:justify-start"
+        class="flex items-center justify-center flex-1 text-xl text-white logo lg:justify-start"
       >
-        <nuxt-link to="/#home"> Betawave.io </nuxt-link>
+        <nuxt-link to="/#home" class="tracking-widest uppercase">
+          Betawave.io
+        </nuxt-link>
       </div>
 
       <nav
@@ -21,7 +23,7 @@
         v-for="link in links"
       >
         <nuxt-link
-          class="px-2 py-1 font-medium"
+          class="px-2 py-1 text-lg font-medium tracking-wide"
           :class="current == link.target ? 'active' : ''"
           :to="{ path: '/', hash: `${link.target}` }"
           ref="anchor"
@@ -108,8 +110,6 @@ export default {
       const anchorLinks = this.$refs.anchor;
       const sections = document.querySelectorAll("section");
 
-      // console.log(anchorLinks[1].$el);
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         if (scrollY >= sectionTop - 60) {
@@ -129,7 +129,9 @@ export default {
 
     newActiveLink() {
       const anchorLinks = this.$refs.anchor;
-      const anchorLinks2 = this.$refs.anchor2;
+      // const anchorLinks2 = this.$refs.anchor2;
+
+      // console.log(anchorLinks2, "222");
       const sections = document.querySelectorAll("section");
 
       let index = sections.length;
@@ -139,8 +141,8 @@ export default {
       anchorLinks.forEach((link) => link.$el.classList.remove("active"));
       anchorLinks[index].$el.classList.add("active");
 
-      anchorLinks2.forEach((link) => link.$el.classList.remove("active"));
-      anchorLinks2[index].$el.classList.add("active");
+      // anchorLinks2.forEach((link) => link.$el.classList.remove("active"));
+      // anchorLinks2[index].$el.classList.add("active");
     },
     closeDropDownMenu() {
       this.menuDropdownIsOpen = false;

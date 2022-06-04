@@ -86,7 +86,7 @@ export default {
   },
   computed: {
     cologBg() {
-      return "bg-primary-bg-ter text-md border focus:outline-none";
+      return "text-md border focus:outline-none text-black";
     },
     inputClass() {
       return {

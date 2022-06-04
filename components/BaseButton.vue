@@ -72,7 +72,7 @@ export default {
     btnClass() {
       return {
         "cursor-not-allowed opacity-50": this.disable == true,
-        "text-sm": true,
+        "text-lg uppercase font-bold": true,
         "rounded-lg": this.rounded === "medium",
         rounded: this.rounded === "small",
         "rounded-full": this.rounded === "large",
