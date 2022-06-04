@@ -51,23 +51,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxtjs/fontawesome",
-    [
-      "@nuxtjs/google-fonts",
-      {
-        families: {
-          Mali: {
-            wght: [400, 600, 700],
-          },
-        },
-        subsets: ["latin"],
-        display: "swap",
-        prefetch: false,
-        preconnect: false,
-        preload: false,
-        download: true,
-        base64: false,
-      },
-    ],
+    "@nuxtjs/google-fonts",
   ],
 
   fontawesome: {
@@ -77,17 +61,17 @@ export default {
       brands: true,
     },
   },
-  // googleFonts: {
-  //   families: {
-  //     Roboto: true,
-  //     "Josefin+Sans": true,
-  //     Lato: [100, 300],
-  //     Raleway: {
-  //       wght: [100, 400],
-  //       ital: [100],
-  //     },
-  //   },
-  // },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      "Josefin+Sans": true,
+      Lato: [100, 300],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100],
+      },
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
 

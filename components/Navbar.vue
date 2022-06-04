@@ -118,7 +118,6 @@ export default {
       });
 
       anchorLinks.forEach((link) => {
-        console.log(link.$el.classList);
         if (link.$el.classList.contains(this.current)) {
           link.$el.classList.add("active");
         } else {
@@ -131,7 +130,6 @@ export default {
       const anchorLinks = this.$refs.anchor;
       // const anchorLinks2 = this.$refs.anchor2;
 
-      // console.log(anchorLinks2, "222");
       const sections = document.querySelectorAll("section");
 
       let index = sections.length;
