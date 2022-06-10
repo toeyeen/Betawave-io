@@ -12,7 +12,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Betawave creates world class scalable software solutions for online and land based operations. We are more than just a betting platform. Achieve all your betting goals in Africa with Betawave's multi-featured sportsbook, retail betting platform, enormous virtual sports, and every essential additional service",
+      },
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [

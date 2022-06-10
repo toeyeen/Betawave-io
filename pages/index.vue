@@ -19,6 +19,9 @@
         <p>
           Remaining focused on your needs and providing a genuine commitment to
           your business. We ultimately attain our primary goal – your success.
+          Our watchword is Uniqueness leaving us to build a bespoke system that
+          lets you focus on the business aspect and we in turn handle all the
+          technical essentials of the system.
         </p>
       </template>
 
@@ -42,7 +45,7 @@
           Our team is spread over two offices, in Johannesburg, and Lagos -
           Nigeria. Both offer us advantages in recruiting top talent in the IT
           and business support fields. In fact, our teams are a true
-          international amalgamation of talents Unied Kingdom, Nigeria &
+          international amalgamation of talents United Kingdom, Nigeria &
           Johannesburg amongst others. The international feel of our team means
           we get a more global perspective as well as attracting top talent,
           meaning we can better serve our international clientele.

@@ -28,7 +28,8 @@
         </div>
         <div class="mt-3 md:mt-0 md:order-1">
           <p class="text-base text-center">
-            © {{ currentYear }} Betawave Ltd all right reserved.
+            © {{ currentYear }} Betawave Ltd.
+            <span class="ml-2"> All rights reserved. </span>
           </p>
         </div>
       </div>

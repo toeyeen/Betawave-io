@@ -62,7 +62,7 @@ export default {
           icon: "sun",
           title: "Be the sportsbook boss",
           description:
-            "Attract players from all around the world, have the most sports, events, and unique bet kinds. Let them bet on almost anything.",
+            "Attract players from all around the world, and have them engage in sports, virtual and e-sports bet. Let them bet on almost anything.",
           svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/win-svg_ze46gf.svg",
         },
         {
@@ -92,7 +92,7 @@ export default {
         {
           id: 5,
           icon: "sun",
-          title: "Get more then just a platform",
+          title: "Get more than just a platform",
           description:
             "We’re interested in your success, therefore our industry-experienced team is ready to ensure your goals are achieved.",
           svg: "https://res.cloudinary.com/dvuogdjyq/image/upload/v1643404092/Betawave_io/notification_rscw2l.svg",

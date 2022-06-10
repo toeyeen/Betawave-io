@@ -7,8 +7,8 @@
         <div class="z-10 hidden pb-8 md:block md:w-2/5 product-image">
           <img
             v-infocus="'showElement'"
-            class="my-hidden hidden-left md:-mt-6 xl:-mt-14"
-            src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1643408122/Betawave_io/Screen_Shot_2022-01-28_at_11.11.46_PM_imac2015retina_front_jzxcof.png"
+            class="mt-1 my-hidden hidden-left md:-mt-2 xl:-mt-6"
+            src="https://res.cloudinary.com/dvuogdjyq/image/upload/v1654819188/Betawave_io/shotsnapp-1654819140.021_kftvnc.png"
           />
         </div>
         <div

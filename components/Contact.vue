@@ -34,7 +34,7 @@
           hub of Africa and one of the new innovators in leading iGaming sector.
         </p>
 
-        <div class="flex items-center justify-between mt-8">
+        <div class="items-center justify-between block mt-8 lg:flex">
           <div class="flex items-center justify-between flex-1 phone">
             <div
               class="relative w-10 h-10 mr-4 border border-gray-300 rounded-full"
@@ -49,7 +49,7 @@
               />
             </div>
             <div class="flex-1">
-              <p class="text-xs lg:text-lg">+27 (91) 11563424</p>
+              <p class="text-base lg:text-lg">+27 (91) 11563424</p>
             </div>
           </div>
           <div class="flex items-center justify-between flex-1 email">
