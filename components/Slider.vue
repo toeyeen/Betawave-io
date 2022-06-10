@@ -7,8 +7,6 @@
         v-model="currentIndex"
         type="carousel"
         :perView="perView"
-        @glide:slide-click="test"
-        @gilde:mount-after="testMount"
         :autoplay="autoplay"
         :breakpoints="breakpoints"
       >
@@ -97,12 +95,6 @@ export default {
     startSlider() {
       this.timer = setInterval(this.next, 4000);
     },
-    // test(index) {
-    //   alert(`click ${index}`);
-    // },
-    // testMount() {
-    //   alert("mounted");
-    // },
   },
   mounted() {
     this.startSlider();
