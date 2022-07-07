@@ -14,7 +14,7 @@
         class="flex items-center justify-center flex-1 text-xl font-bold text-white logo lg:justify-start"
       >
         <nuxt-link to="/#home" class="tracking-widest uppercase">
-          Betawave.io
+          SBTCapital.ng
         </nuxt-link>
       </div>
 

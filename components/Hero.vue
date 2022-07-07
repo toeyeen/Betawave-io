@@ -20,7 +20,7 @@
             </h1>
             <p class="text-2xl font-light leading-tight slide-in-first">
               Turn your ideas into profits! Start a new business or expand an
-              existing one – Betawave is your assured partner on the road to
+              existing one – SBTCapital is your assured partner on the road to
               achieving your goals.
             </p>
             <div class="mt-8 btnAnimation">

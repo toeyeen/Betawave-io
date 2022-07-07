@@ -8,7 +8,7 @@
       >
         <div class="flex justify-center space-x-3 md:order-2">
           <a
-            href="https://twitter.com/betawave_io"
+            href="https://twitter.com/SBTCapital.ng"
             target="_blank"
             rel="noopener"
             class="footer-link"
@@ -17,7 +17,7 @@
             <fa :icon="['fab', 'twitter']" class="w-6 h-6 fill-current" />
           </a>
           <a
-            href="https://github.com/betawave_io/website"
+            href="https://github.com/sbtcapital/website"
             target="_blank"
             rel="noopener"
             class="footer-link"
@@ -28,7 +28,7 @@
         </div>
         <div class="mt-3 md:mt-0 md:order-1">
           <p class="text-base text-center">
-            © {{ currentYear }} Betawave Ltd.
+            © {{ currentYear }} SBTCapital Ltd.
             <span class="ml-2"> All rights reserved. </span>
           </p>
         </div>

@@ -5,7 +5,7 @@
     <who-we-are title="About Us" tagId="aboutus">
       <template v-slot:paragraph>
         <p>
-          Betawave is a dynamic sports betting and casino operating platform
+          SBTCapital is a dynamic sports betting and casino operating platform
           comprising a highly skilled team whose primary concern is your
           success.
         </p>

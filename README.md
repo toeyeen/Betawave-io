@@ -1,4 +1,4 @@
-# Betawave-io Website
+# SBTCapital-io Website
 
 ## Build Setup
 

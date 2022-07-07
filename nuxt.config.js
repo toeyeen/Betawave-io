@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "betawave-io",
+    title: "SBTCapital",
     htmlAttrs: {
       lang: "en",
     },
@@ -16,7 +16,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Betawave creates world class scalable software solutions for online and land based operations. We are more than just a betting platform. Achieve all your betting goals in Africa with Betawave's multi-featured sportsbook, retail betting platform, enormous virtual sports, and every essential additional service",
+          "SBTCapital creates world class scalable software solutions for online and land based operations. We are more than just a betting platform. Achieve all your betting goals in Africa with SBTCapital's multi-featured sportsbook, retail betting platform, enormous virtual sports, and every essential additional service",
       },
       { name: "format-detection", content: "telephone=no" },
     ],

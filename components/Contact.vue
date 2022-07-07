@@ -66,7 +66,7 @@
               />
             </div>
             <div class="flex-1">
-              <p class="text-xs md:text-lg">hello@betawave.io</p>
+              <p class="text-xs md:text-lg">hello@sbtcapital.ng</p>
             </div>
           </div>
         </div>
